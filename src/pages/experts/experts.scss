@@ -1,0 +1,21 @@
+
+
+
+
+
+
+
+.ticket{
+    background-color: white;
+    max-width: 250px;
+    text-align: right;
+    padding: 20px;
+    border-radius: 20px;
+    transform: translateY(-50px);
+    -webkit-box-shadow: 0px 8px 12px 1px rgba(0,0,0,0.84); 
+    box-shadow: 0px 8px 12px 1px rgba(0,0,0,0.84);
+
+    h2{
+        color: #439090;
+    }
+}

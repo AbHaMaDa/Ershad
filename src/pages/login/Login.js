@@ -1,5 +1,5 @@
-import Footer from "./components/footer/Footer"
-import Navbar from "./components/navbar/Navbar"
+import Footer from "../components/footer/Footer"
+import Navbar from "../components/navbar/Navbar"
 import "./login.scss"
 
 
@@ -16,7 +16,7 @@ const Login =()=>{
                         <form>
                             <div class="my-3">
                                 <label for="email" class="form-label">البريد الإلكترونى</label>
-                                <input type="email" class="form-control" id="email" placeholder="Enter your email" required/>
+                                <input type="email" class="form-control" id="email" placeholder="feicrceremri3@gmail.com" required/>
                             </div>
                             
                             <div class="my-3">

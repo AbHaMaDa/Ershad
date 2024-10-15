@@ -7,6 +7,19 @@
     
     
     /* Container and card layout */
+
+
+    .gether{
+      text-align: center;
+      opacity: 0; /* Start hidden */
+      transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Transition effects */
+    
+      &.visible {
+        opacity: 1; /* Fade in */
+        transform: translateY(-250px) ;
+      }
+  
+    }
     .boxes {
         display: flex;
         flex-wrap: wrap; /* Allow wrapping */
@@ -17,15 +30,7 @@
 
 
 
-        text-align: center;
-        opacity: 0; /* Start hidden */
-        transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Transition effects */
-      
-        &.visible {
-          opacity: 1; /* Fade in */
-          transform: translateY(-250px) ;
-        }
-    
+  
         
       
         .box {
@@ -35,7 +40,6 @@
           padding: $gap;
           box-shadow: 0 4px 8px $card-shadow-color;
           transition: transform 0.3s;
-          text-align: center;
           display: flex;
           flex-direction: column;
           justify-content: space-between;

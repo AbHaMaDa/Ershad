@@ -1,6 +1,6 @@
 import "./register.scss"
-import Footer from "../login/components/footer/Footer"
-import Navbar from "../login/components/navbar/Navbar"
+import Footer from "../components/footer/Footer"
+import Navbar from "../components/navbar/Navbar"
 
 const Register =()=>{
     return(
@@ -14,11 +14,11 @@ const Register =()=>{
                     <form>
                             <div class="my-3">
                                 <label for="arabic_name" class="form-label">الإسم بالكامل (اللغة العربية) </label>
-                                <input type="text" class="form-control" id="arabic_name" placeholder="Enter your name" required/>
+                                <input type="text" class="form-control" id="arabic_name" placeholder="أدخل إسمك" required/>
                             </div>
                             <div class="my-3">
                                 <label for="email" class="form-label">البريد الإلكترونى</label>
-                                <input type="email" class="form-control" id="email" placeholder="Enter your email" required/>
+                                <input type="email" class="form-control" id="email" placeholder="feicrceremri3@gmail.com" required/>
                             </div>
                             
                             <div class="my-3">

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import"./navbar.scss"
+import { Link } from "react-router-dom";
 
 
 
@@ -95,9 +96,9 @@ useEffect(() => {
             عن الموقع
           </a>
           <ul className="dropdown-menu" aria-labelledby="navbarDropdown2">
-            <li><a className="dropdown-item" href="#">من نحن</a></li>
+            <li><Link className="dropdown-item" to="/about_us" >من نحن</Link></li>
             <hr className="dropdown-divider" />
-            <li><a className="dropdown-item" href="#">المرشدين</a></li>
+            <li><Link className="dropdown-item" to="/experts">المرشدين</Link></li>
             <hr className="dropdown-divider" />
             <li><a className="dropdown-item" href="#">ما نقدمه </a></li>
 
@@ -108,7 +109,7 @@ useEffect(() => {
           <a className="nav-link" href="#">المستجدات</a>
           </li>
         </ul>
-    <div className="signing col-lg-4">
+    <div className="signing col-lg-4 ">
       <a href="/register" className="signUp btn  d-lg-inline-block mx-2">سجل الان</a>
       <a href="/login" className="signIn btn d-lg-inline-block mx-2">دخول</a>
       <a href="#profile"><img src="./images/profile-circle.png" alt="profile-logo" className="img-fluid" /></a>

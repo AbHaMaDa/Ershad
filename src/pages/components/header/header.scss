@@ -1,0 +1,79 @@
+.expert-info-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../../../public/images//image (1).png") 50%;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover; /* Make sure the background covers the container */
+    padding: 40px 20px; /* Padding for smaller screens */
+}
+
+/* Adjusting padding and width for smaller screens */
+@media (max-width: 768px) {
+    .expert-info-container {
+        background-size: cover; /* Ensure background covers area */
+        padding: 60px 10px; /* Increase padding on smaller screens */
+    }
+
+    .expert-section {
+        width: 100%; /* Make the section full width */
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .expert-info-text-style {
+        font-size: 30px; /* Smaller font on small screens */
+    }
+
+    .expert-card p {
+        font-size: 18px; /* Adjust font size for better readability */
+    }
+}
+
+.expert-section {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    padding-top: 105px;
+    padding-bottom: 90px;
+    min-width: 278px !important;
+    h1{
+        width: 100%;
+    }
+}
+
+.expert-info-text-style {
+    padding: 0;
+    margin: 0;
+    font: 400 40px Poppins, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.expert-card {
+    align-self: center;
+    margin-top: 16px;
+}
+
+.expert-card p {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+.home {
+    color: white;
+    text-decoration: none;
+}
+
+i {
+    color: white;
+}
+
+.current {
+    text-decoration: none;
+    color: #439090;
+}

@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { styled } from '@mui/material/styles';
 import Button from '@mui/material/Button';
-import Footer from "../login/components/footer/Footer"
-import Navbar from "../login/components/navbar/Navbar"
+import Footer from "../components/footer/Footer"
+import Navbar from "../components/navbar/Navbar"
 import "./join.scss"
 
 

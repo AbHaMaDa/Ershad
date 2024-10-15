@@ -28,19 +28,8 @@ const Boxes =()=>{
     }, []);
 
 
-
-
-
-
-
-
-
-
-
-
-
     return(
-        <div class="boxes container"  ref={sectionRef}>
+        <div class="boxes container gether"  ref={sectionRef}>
         <div class="box ">
         <img src="./images/image 48.png" alt="img" />
         <div className="highlighted highlighted1">
@@ -50,7 +39,7 @@ const Boxes =()=>{
             حلل البيانات واتخذ قرارات مبنية على رؤى واضحة وكن خبيرًا في تحليل الأعمال
         </p>
         <div class="view">
-        <span><a href="#view">قراءة المزيد<i class="fa-solid fa-arrow-left mx-3"></i></a></span>
+        <span><a href="#view">قراءة المزيد<i class="fa-solid fa-angle-left mx-3"></i></a></span>
         </div>
         </div>
         <div class="box  ">
@@ -63,7 +52,7 @@ const Boxes =()=>{
         </p>
         <div class="view">
             <span>
-                <a href="#view">قراءة المزيد<i class="fa-solid fa-arrow-left mx-3"></i></a>
+                <a href="#view">قراءة المزيد<i class="fa-solid fa-angle-left mx-3"></i></a>
             </span>
         </div>
         </div>
@@ -76,7 +65,7 @@ const Boxes =()=>{
             تعلم إنشاء مواقع وتطبيقات تفاعلية وابدأ في تحويل الأفكار إلى واقع رقمي
         </p>
         <div class="view">
-            <span><a href="#view">قراءة المزيد<i class="fa-solid fa-arrow-left mx-3"></i></a></span>
+            <span><a href="#view">قراءة المزيد<i class="fa-solid fa-angle-left mx-3"></i></a></span>
         </div>
         </div>
     </div>

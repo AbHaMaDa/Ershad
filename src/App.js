@@ -6,6 +6,8 @@ import Login from './pages/login/Login';
 import Register from './pages/register/Register';
 import Scholarship from './pages/scholarshipForm/Scholarship';
 import Join from './pages/joinTeamForm/Join';
+import Experts from './pages/experts/Experts';
+import AboutUs from './pages/aboutUs/AboutUs';
 
 function App() {
   return (
@@ -17,6 +19,10 @@ function App() {
           <Route path='/register' Component={Register} />
           <Route path='/register_scholarship' Component={Scholarship} />
           <Route path='/join_team' Component={Join} />
+          <Route path='/experts' Component={Experts} />
+          <Route path='/about_us' Component={AboutUs} />
+
+
 
 
 

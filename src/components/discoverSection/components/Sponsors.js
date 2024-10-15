@@ -37,7 +37,7 @@ const Sponsors =()=>{
 
 
     return(
-        <div class="down" ref={sectionRef}>
+        <div class="  down " ref={sectionRef}>
         <div class="vertical-centered-layout container">
             <div class="horizontal-image-gallery row">
             <div class="col-6 col-sm-4 col-md-3 col-lg-2">

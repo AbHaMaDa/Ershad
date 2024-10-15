@@ -1,3 +1,15 @@
+
+.gather{
+    text-align: center;
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px); /* Start slightly down */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Transition effects */
+  
+    &.visible {
+      opacity: 1; /* Fade in */
+      transform: translateY(0); /* Slide up */}
+}
+
 .how{
     width: 100%;
     min-height: 400px;
@@ -8,14 +20,7 @@
     align-items: center;
 
 
-    text-align: center;
-    opacity: 0; /* Start hidden */
-    transform: translateY(20px); /* Start slightly down */
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Transition effects */
-  
-    &.visible {
-      opacity: 1; /* Fade in */
-      transform: translateY(0); /* Slide up */}
+
       
     .title_section{
         color: #439090;
