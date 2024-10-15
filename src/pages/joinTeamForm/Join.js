@@ -1,13 +1,9 @@
-
-
 import * as React from 'react';
 import { styled } from '@mui/material/styles';
 import Button from '@mui/material/Button';
-import Footer from "../login/components/footer/Footer";
-import Navbar from "../login/components/navbar/Navbar";
-import "./scholarship.scss"
-
-
+import Footer from "../login/components/footer/Footer"
+import Navbar from "../login/components/navbar/Navbar"
+import "./join.scss"
 
 
 
@@ -26,21 +22,15 @@ const VisuallyHiddenInput = styled('input')({
   });
   
 
-
-
-
-
-
-const Scholarship = () => {
-
-    return (
+const Join = () =>{
+     return(
         <>
         <Navbar/>
         <div class="container my-5">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-8 col-lg-6">
                     <div class="card shadow-lg p-4">
-                        <h3 class=" fs-2 fw-bold text-center mb-4">سجل بالمنحة الان </h3>
+                        <h3 class=" fs-2 fw-bold text-center mb-4">انضم إلى فريقنا </h3>
                         <form>
                                 <div class="my-3">
                                     <label for="arabic_name" class="form-label">الإسم بالكامل (اللغة العربية) </label>
@@ -98,8 +88,8 @@ const Scholarship = () => {
         
                                 <div className='my-2 d-flex info_form'>
                                     <div class="my-3" className='select'>
-                                        <label for="division" class="form-label">الفرقة</label>
-                                        <select  id="division">
+                                        <label for="path" class="form-label">اختر المسار التدريبى</label>
+                                        <select  id="path">
                                             <option value="" disabled selected>اختر</option>
                                         </select>
                                     </div>
@@ -110,18 +100,6 @@ const Scholarship = () => {
                                             <option value="" disabled selected>اختر</option>
                                         </select>
                                     </div>
-                                </div>
-
-
-                                <div className='my-2 d-flex info_form'>
-                                    <div class="my-3" className='select'>
-                                        <label for="path" class="form-label"> اختر مسارك </label>
-                                        <select  id="path">
-                                            <option value="" disabled selected>اختر</option>
-                                        </select>
-                                    </div>
-
-
                                 </div>
 
                                 <div class="my-3">
@@ -136,7 +114,7 @@ const Scholarship = () => {
 
                                 <div class="d-flex  flex-column  justify-content-between my-5">
                                     <div className="my-3 d-flex  justify-content-between align-items-center">
-                                        <p className='test'>ادخل على رابط إختبار الشخصية <a href="">من هنا</a></p>
+                                        <p className='test'>ارفع سيرتك الذاتية </p>
                                         <Button
                                             component="label"
                                             role={undefined}
@@ -151,7 +129,7 @@ const Scholarship = () => {
                                                 }
                                             }}
                                             >
-                                            رفع النتيجة 
+                                            رفع الملف  
                                             <VisuallyHiddenInput
                                                 type="file"
                                                 onChange={(event) => console.log(event.target.files)}
@@ -159,30 +137,7 @@ const Scholarship = () => {
                                             />
                                         </Button>
                                     </div>
-                                    <div className="my-3 d-flex  justify-content-between align-items-center">
-                                        <p className='test'>ادخل على رابط إختبار الإنجليزى  <a href="">من هنا</a></p>
-                                        <Button
-                                            component="label"
-                                            role={undefined}
-                                            variant="contained"
-                                            tabIndex={-1}
-                                            sx={{
-                                                backgroundColor: '#439090', // Change this to your desired background color
-                                                color: '#ffffff',
-                                                // Change this to your desired text color
-                                                '&:hover': {
-                                                  backgroundColor: '#000', // Change hover color
-                                                }
-                                            }}
-                                            >
-                                            رفع النتيجة 
-                                            <VisuallyHiddenInput
-                                                type="file"
-                                                onChange={(event) => console.log(event.target.files)}
-                                                multiple
-                                            />
-                                        </Button>
-                                    </div>
+
                                     <div className="my-3">
                                     <input type="checkbox" id="remember" />
                                     <label className="mx-3" for="remember">بالضغط على التسجيل أنا اوافق على شروط الخدمة وسياسة الخصوصية</label>
@@ -203,7 +158,8 @@ const Scholarship = () => {
         </div>
         <Footer/>
         </>
-    );
-};
+     )
+}
 
-export default Scholarship;
+
+export default Join;
