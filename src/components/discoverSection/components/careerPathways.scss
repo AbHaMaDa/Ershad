@@ -1,0 +1,53 @@
+
+.career-pathways-section {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(0, 42, 42, 0.75), rgba(0, 42, 42, 0.75)),
+      url("../../../../public/images/image-3.png") 50%;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: auto, auto, cover;
+
+
+
+    text-align: center;
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px); /* Start slightly down */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Transition effects */
+  
+    &.visible {
+      opacity: 1; /* Fade in */
+      transform: translateY(0); /* Slide up */}
+
+
+  }
+  .career-path-section {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    max-width: 1031px;
+    padding-top: 64px;
+    padding-bottom: 347px;
+  }
+  .arabic-heading-bold {
+    flex: 0 0 auto;
+    padding: 0;
+    margin: 50px 0px;
+    font: 700 32px/32px Poppins, sans-serif;
+    color: white;
+    text-align: center;
+  }
+  .diverse-pathways-text-style {
+    flex: 0 0 auto;
+    align-self: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 16px;
+    font: 400 24px/32px Poppins, sans-serif;
+    color: #f3f3f3;
+    text-align: center;
+  }

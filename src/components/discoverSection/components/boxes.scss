@@ -1,0 +1,121 @@
+    // Variables (optional, for customization)
+    $gap: 20px;
+    $card-bg-color: #fff;
+    $card-border-color: #ddd;
+    $card-shadow-color: rgba(0, 0, 0, 0.1);
+    $primary-color:#439090;
+    
+    
+    /* Container and card layout */
+    .boxes {
+        display: flex;
+        flex-wrap: wrap; /* Allow wrapping */
+        justify-content: space-between; /* Space between items */
+        gap: $gap; /* Space between the cards */
+        padding: $gap;
+
+
+
+
+        text-align: center;
+        opacity: 0; /* Start hidden */
+        transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Transition effects */
+      
+        &.visible {
+          opacity: 1; /* Fade in */
+          transform: translateY(-250px) ;
+        }
+    
+        
+      
+        .box {
+          background-color: $card-bg-color;
+          border: 1px solid $card-border-color;
+          border-radius: 10px;
+          padding: $gap;
+          box-shadow: 0 4px 8px $card-shadow-color;
+          transition: transform 0.3s;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          
+          .highlighted{
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 10%;
+            border-radius: 50px;
+            transform: translateY(-40px) ;
+        }
+        .highlighted1{
+            background-color:#942A00 ;
+        
+        }
+        .highlighted2{
+            background-color: #F0A947;
+        }
+        .highlighted3{
+            background-color: #EC7E50;
+        }
+        
+      
+          &:hover {
+            transform: translateY(-10px); /* Hover effect */
+          }
+      
+          img {
+            max-width: 100%;
+            border-radius: 10px;
+          }
+      
+          h3 {
+            margin: 15px 0;
+            font-size: 1.3rem;
+            color: white;
+          }
+      
+          .passage {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 20px;
+          }
+      
+          .view {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+      
+            a {
+              color: $primary-color;
+              text-decoration: none;
+              font-size: 1rem;
+            }
+      
+            i {
+              margin-left: 10px;
+              transition: 0.5s ease-in-out;
+            }
+      
+            &:hover i {
+              transform: translateX(-10px);
+            }
+          }
+        }
+      }
+      
+      /* Media Queries for Responsiveness */
+      @media (min-width:992px ) {
+        .box {
+            flex: 1 1 calc(33.333% - #{$gap}); /* 3 cards per row on large screens */
+        }
+      }
+      
+      @media (max-width: 991px) {
+        .box {
+            flex: 1 1 100%; /* Full width on small screens */
+        }
+      }

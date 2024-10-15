@@ -1,0 +1,108 @@
+.discover_section{
+
+
+
+    .discover_self{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        text-align: center;
+        opacity: 0; /* Start hidden */
+        transform: translateY(20px); /* Start slightly down */
+        transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Transition effects */
+      
+        &.visible {
+          opacity: 1; /* Fade in */
+          transform: translateY(-200px);
+        }
+          .vertical-centered-layout {
+            padding: 30px;}
+            
+        .up{
+            margin: 0px;
+            padding: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .content{
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                h1{
+                    color: #439090;
+                    font-size: 40px;
+                    font-weight: bold;
+                }
+                .links{
+                    margin: 20px 0px;
+                    align-items: center;
+                    gap: 20px;
+                    a{
+                        font-size: 20px;
+                        text-decoration: none;
+                        color: black;
+                        position: relative;
+                        &:hover{
+                            color: #439090;
+                        }
+                        &:hover:after{
+                            position: absolute;
+                            content: "";
+                            width: 100%;
+                            height: 1px;
+                            background-color: #439090;
+                            bottom: 0%;
+                            right: 0%;
+        
+                        }
+        
+                    }
+                }
+                p{
+                    font-size:20px;
+                    width: 70%;
+                    color: rgb(20, 18, 18,0.5);
+                    word-spacing: 3px;
+                }
+                
+                .btn{
+                    margin: 40px 0px;
+                    font-size: 20px;
+                    min-width: 10%;
+                    max-width: 50%;
+                    border-radius: 50px;
+                    color: white;
+                    border: 1px solid #439090;
+                    background-color: #439090;
+                }.btn:hover{
+                    background-color:red ;
+                    background-color: white;
+                    color: black;
+
+
+                }
+            }
+            .image{
+                padding: 0px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+            }
+        }
+
+          
+        @media (max-width:767px ) {
+            .content{
+                align-items: center;
+            }
+          }
+    }
+
+  
+
+
+  }
+

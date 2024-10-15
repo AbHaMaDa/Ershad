@@ -1,0 +1,113 @@
+
+.career-journey-section{
+    background-color: #EBF7F7;
+
+}
+
+.ready{
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+
+    text-align: center;
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px); /* Start slightly down */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Transition effects */
+  
+    &.visible {
+      opacity: 1; /* Fade in */
+      transform: translateY(0); /* Slide up */}
+    .right{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 100%;
+        h1{
+            font-weight: bold;
+        }
+
+        .links{
+            margin-top: 20px;
+            width: 10%;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            a{
+                font-size: 25px;
+                text-decoration: none;
+                color: black;
+                position: relative;
+                &:hover{
+                    color: #439090;
+                }
+                &:hover:after{
+                    position: absolute;
+                    content: "";
+                    width: 100%;
+                    height: 1px;
+                    background-color: #439090;
+                    bottom: 0%;
+                    right: 0%;
+
+                }
+
+            }
+        }
+        p{
+            margin-top: 20px;
+            word-spacing: 5px;
+            font-size: 25px;
+            color: rgb(20, 18, 18,0.5);
+        }
+        .sign{
+            margin: 50px 0px;
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 50px;
+            .btn{
+                width: 150px;
+                font-size: 22px;
+                min-width: 20%;
+                border-radius: 50px;
+                color: #439090;
+                border: 1px solid #439090;
+            }:hover{
+                color: white;
+                background-color: #439090;
+            }
+        }
+
+    }
+  
+    .left{
+        max-height: 500px;
+        background-image: url("../../../../../public/images/image\ 25.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+        .pic1{
+            transform: translateX(-80%)  translateY(-45%) ;            
+        }
+        .pic2{
+            transform: translateX(130%)  translateY(20%) ;            
+        }
+        .pic3{
+            transform: translateX(-80%)  translateY(-30%) ;            
+        }
+    }
+
+}
+
+
+@media (max-width:1400px ) {
+    .ready{
+        justify-content: center;
+
+    }
+  }

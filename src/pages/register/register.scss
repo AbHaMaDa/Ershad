@@ -1,0 +1,30 @@
+
+
+
+
+
+.holder{
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 50px;
+
+
+    .google  {
+        color: white ;
+        background-color: gray ;
+    }.google:hover{
+        color: white ;
+        background-color: red;
+    }
+    
+    .facebook{
+        color: white ;
+        background-color: gray ;
+    }.facebook:hover{
+        color: white ;
+        background-color: blue;
+    }
+}
+

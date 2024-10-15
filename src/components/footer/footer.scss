@@ -1,0 +1,118 @@
+.footer {
+    padding-top: 30px ;
+    background-color: #1D4747;
+    color: white;
+  
+    &-middle {
+      padding: 20px 0;
+    }
+
+    .wrap{
+        justify-content: space-between;
+        .footer-column{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            .sub-menu__list {
+                padding: 0px;
+                margin: 0xp;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .sub-menu__item{
+                margin-bottom: 10px;
+            }
+        }
+
+        .case{
+            ul{
+                li{
+                    min-width: 200px;
+                }
+            }
+        }
+
+    }
+  
+    .logo {
+      margin-bottom: 20px;
+  
+      &__image {
+        max-width: 120px;
+        margin-right: 15px;
+      }
+      a{
+        text-decoration: none;
+      }
+  
+      h1 {
+        font-size: 40px;
+        font-weight: bold;
+        margin-right: 30px;
+        color: white;
+        
+      }
+    }
+  
+    .social-links {
+        margin-top: 20px;
+        padding: 0px;
+        li {
+        margin-left: 15px;
+        border-radius: 50%;
+        a{
+            border:  1px solid white;
+            border-radius: 50%;
+            background-color:#1D4747 ;
+            text-align: center;
+        }
+
+      }:hover{
+        .footer__social-link {
+            svg {
+                fill:rgb(8, 119, 171);
+            }
+          }
+      }
+  
+      .footer__social-link {
+        svg {
+            margin: 5px;
+            fill:white;
+        }
+      }
+    }
+  
+    .footer-menu {
+      .sub-menu__title {
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+  
+      .menu-link {
+        text-decoration: none;
+        color: white;
+  
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  
+    .footer-bottom {
+      padding: 15px 0;
+      border-top: 1px solid #ddd;
+  
+      .footer-settings {
+        .form-select {
+          margin-left: 10px;
+          border: 1px solid #ddd;
+        }
+      }
+    }
+  }
+  

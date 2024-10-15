@@ -1,0 +1,30 @@
+
+.info_form{
+    justify-content: space-between;
+    gap: 10%;
+
+    .select{
+        width: 100%;
+        select{
+            width: 100%;
+            padding: 10px;
+            appearance: none; /* Hide the default arrow */
+            -webkit-appearance: none; /* For Safari */
+            -moz-appearance: none; /* For Firefox */
+            background-color: white; /* Change this for background */
+            border: 1px solid #439090;
+            border-radius: 10px;
+
+
+            background-image: url('../../../public/images/caret-down.png'); /* Your custom arrow */
+            background-repeat: no-repeat;
+            background-position: left 15px center; /* Adjust arrow position here */
+            background-size: 10px; /* Adjust arrow size if needed */
+        }:focus{
+            border-color: #007bff; /* Change this for focused border color */
+            outline: none;
+        }
+    }
+}
+
+

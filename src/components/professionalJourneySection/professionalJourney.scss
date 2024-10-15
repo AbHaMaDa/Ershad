@@ -1,0 +1,51 @@
+.go{
+    width: 100%;
+    margin: 0px;
+    padding: 20px;
+    background-image: url("../../../public/images/go.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+    
+
+
+
+    color: white;
+    text-align: center;
+    .content{
+        margin: 140px auto;
+        width: 70%;
+        h1{
+            margin: 0px;
+            padding: 0px;
+            font-weight: bolder;
+        }
+
+        p{
+            margin-top: 30px;
+            word-spacing: 3px;
+            width: 100%;
+            font-size: 30px;
+            font-weight: 400;
+        }
+
+        .sign{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            .btn{
+                font-size: 20px;
+                min-width: 20%;
+                border-radius: 50px;
+                color: white;
+                border: 1px solid white;
+            }:hover{
+                background-color: #439090;
+            }
+        }
+    }
+}
