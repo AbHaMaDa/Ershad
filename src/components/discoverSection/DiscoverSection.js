@@ -40,7 +40,7 @@ const DiscoverSection =()=>{
             <Boxes/>
 
             <div className="discover_self" ref={sectionRef}>
-                <div className="up  row  ">
+                <div className="top  row  ">
                     <div className="content col-md-8 col-sm-12  ">
                     <h1>اكتشف من أنت!</h1>
                     <div className="links d-flex ">
