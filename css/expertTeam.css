@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color-: #008080;
+  --secondary-color-: #004747;
+  --lable-font-color-: #4d4d4d;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+.container {
+  position: relative;
+}
+
+.container .title {
+  height: 300px;
+  width: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.5)),
+    url(../Images/expertImg.png) no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.container .title span {
+  color: #fff;
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+
+.title .followLinks a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.title .followLinks a:hover {
+  color: #ffffffa9;
+}
+
+.title .followLinks i {
+  font-size: 18px;
+  color: #fff;
+  margin: 0 15px;
+}
+
+.title .followLinks #about {
+  color: var(--main-color-);
+}
+
+.ourTeam {
+  width: 100%;
+  padding: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 90px;
+  row-gap: 90px;
+}
+
+.ourTeam .instractor {
+  position: relative;
+}
+
+.ourTeam .instractor img {
+  width: 325px;
+  height: 365px;
+  border-radius: 8px;
+}
+
+.instractor .sammary {
+  width: 260px;
+  padding: 10px;
+  text-align: end;
+  line-height: 1.5;
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 4px 4px 11px 0px #0000001a;
+}
+
+.sammary h3 {
+  color: var(--main-color-);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.sammary span {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: var(--lable-font-color-);
+}
+
+.sammary p {
+  color: var(--lable-font-color-);
+}

@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color-: #008080;
+  --secondary-color-: #004747;
+  --font-color-: #777777;
+  --lable-font-color-: #4d4d4d;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+.container {
+  position: relative;
+}
+/* ---------------- => Start Title Box Style ---------------- */
+
+.container .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 250px;
+  width: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.5)),
+    url(../Images/expertImg.png) no-repeat center;
+  background-size: cover;
+}
+
+.title span {
+  color: #fff;
+  font-size: 90px;
+  margin-bottom: 30px;
+}
+
+.title .followLinks a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.followLinks a:hover {
+  color: #ffffffa9;
+}
+
+.followLinks i {
+  color: #fff;
+  font-size: 18px;
+  margin: 0 15px;
+}
+
+.followLinks #about {
+  color: var(--main-color-);
+}
+
+/* ---------------- => End Title Box Style ---------------- */
+
+/* ---------------- => Start About Box Style ---------------- */
+
+.aboutBox {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row-reverse;
+  width: 100%;
+  height: fit-content;
+  padding: 50px 30px;
+}
+
+.aboutBox .subHead {
+  border-left: 1px solid var(--secondary-color-);
+  padding: 70px;
+}
+
+.subHead span {
+  color: var(--main-color-);
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.sammary {
+  width: 760px;
+  text-align: end;
+}
+
+.sammary p {
+  color: var(--font-color-);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 0 0 35px;
+}
+
+/* ---------------- => End About Box Style ---------------- */
+
+/* ---------------- => Start features Box Style ---------------- */
+
+.features {
+  display: flex;
+  justify-content: center;
+  height: 95vh;
+  padding: 50px 100px;
+  background: #ebf7f7;
+}
+
+.features h3 {
+  color: var(--main-color-);
+  font-size: 35px;
+  margin-bottom: 60px;
+}
+
+.features .advantages {
+  text-align: end;
+}
+
+.advantages .propierty {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin: 35px 50px 0 0;
+}
+
+.propierty i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 75px;
+  font-size: 30px;
+  border-radius: 50%;
+}
+
+#firstIcon {
+  color: #e76f51;
+  border: 2px solid #e76f51;
+}
+
+#secondeIcon {
+  color: var(--main-color-);
+  border: 2px solid var(--main-color-);
+}
+
+#thirdIcon {
+  color: #ffaa47;
+  border: 2px solid #ffaa47;
+}
+
+#fourthIcon {
+  color: #000;
+  border: 2px solid #000;
+}
+
+.propierty .brief {
+  width: calc(100% - 60px);
+  margin-right: 20px;
+}
+
+.brief span {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.brief p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 10px 0;
+  color: var(--font-color-);
+}
+
+.features .imageBox {
+  position: relative;
+  width: 500px;
+  height: 100%;
+  margin-left: 50px;
+}
+
+.imageBox img {
+  width: 90%;
+  height: 370px;
+  border: 9px solid #e76f5180;
+  border-radius: 8px;
+}
+
+.imageBox img:nth-child(2) {
+  position: absolute;
+  bottom: 0px;
+  left: -60px;
+}
+
+/* ---------------- => End features Box Style ---------------- */
+
+
+/* ---------------- Start => Sponser Box Style ---------------- */
+
+.sponser {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  column-gap: 100px;
+  padding: 50px 70px;
+}
+
+.sponser img {
+  width: 200px;
+}
+
+/* ---------------- End => Sponser Box Style ---------------- */

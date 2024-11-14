@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ------------------------ Font Awesome Link -------------------- -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- ------------------------ Header And Footer Style Link -------------------- -->
+    <link rel="stylesheet" href="css/header-footer.css" />
+
+    <!-- -------------------------- CSS Style Link -------------------- -->
+    <link rel="stylesheet" href="css/mentorSec.css" />
+
+    <title>Ershad - Mentor's Section</title>
+  </head>
+  <body>
+    <!-- --------------------------- Start Header Section --------------------------- -->
+    <header>
+      <div class="btns">
+        <button type="submit" id="logIn">دخول</button>
+        <button type="submit" id="signUp">سجل الان</button>
+      </div>
+
+      <div class="searchBox">
+        <input
+          type="search"
+          name="searchBar"
+          id="searchBar"
+          placeholder="....ابحث عن"
+        />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+
+      <div class="homeLink">
+        <a href="#">الرئيسيه</a>
+      </div>
+
+      <div class="logo">
+        <span>إرشاد</span>
+        <img src="Images/logo.png" alt="Logo" />
+      </div>
+    </header>
+    <!-- --------------------------- End Header Section --------------------------- -->
+
+    <!-- --------------------------- Start Content Section --------------------------- -->
+    <section class="container">
+      <form action="">
+        <h1 class="title">انضم إلي فريقنا</h1>
+
+        <label for="name">الإسم بالكامل (اللغه العربيه)</label>
+        <input type="text" placeholder="أدخل إسمك" id="name" class="input" />
+
+        <label for="Engname">الإسم بالكامل (اللغه الإنجليزيه)</label>
+        <input type="text" placeholder="أدخل إسمك" id="Engname" class="input" />
+
+        <label for="email">البريد الإلكتروني</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="input"
+          placeholder="feiceremri3@gmail.com"
+        />
+
+        <label for="phoneNum">رقم الهاتف</label>
+        <input
+          type="tel"
+          name="phoneNumber"
+          id="phoneNum"
+          class="input"
+          placeholder="+20 101234567"
+        />
+
+        <div class="selectColumn">
+          <div class="selectBox">
+            <label for="nationality">الجنسيه</label>
+            <select name="nationality" id="nationality">
+              <option value="إختر" hidden>إختر</option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+          </div>
+
+          <div class="selectBox">
+            <label for="acc">الإقامه</label>
+            <select name="Accommodation" id="acc">
+              <option value="إختر" hidden>إختر</option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+          </div>
+        </div>
+
+        <div class="selectColumn">
+          <div class="selectBox">
+            <label
+              for="governorate
+            "
+              >المحافظه</label
+            >
+            <select name="" id="governorate">
+              <option value="إختر" hidden>إختر</option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+          </div>
+
+          <div class="selectBox">
+            <label for="univercity">الجامعه</label>
+            <select name="univercity" id="us">
+              <option value="إختر" hidden>إختر</option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+          </div>
+        </div>
+
+        <label for="collage">الكليه</label>
+        <input
+          type="text"
+          name="collage"
+          id="collage"
+          class="input"
+          placeholder="أضف كليتك"
+        />
+
+        <div class="selectColumn">
+          <div class="selectBox">
+            <label
+              for="governorate
+                "
+              >المحافظه</label
+            >
+            <select name="" id="governorate">
+              <option value="إختر" hidden>إختر</option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+          </div>
+
+          <div class="selectBox">
+            <label for="path">إختر المسار التدريبي</label>
+            <select name="path" id="path" class="input">
+              <option value="إختر" hidden>إختر</option>
+              <option value="Front">Front-End Devlopment</option>
+              <option value="Back">Back-End Development</option>
+              <option value="SullStack">Full-Stack Development</option>
+              <option value="Data">Data Analysis</option>
+              <option value="Mobile">Mobile Application Development</option>
+            </select>
+          </div>
+        </div>
+
+        <label for="password">كلمه المرور</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          class="input"
+          placeholder="**********"
+        />
+
+        <label for="passwordCofirm">تأكيد كلمه المرور</label>
+        <input
+          type="password"
+          name="passwordCofirm"
+          id="passwordCofirm"
+          class="input"
+          placeholder="**********"
+        />
+
+        <div class="resultBox">
+          <p>ارفع سيرتك الذاتيه</p>
+
+          <div class="fileBtn">
+            <input type="file" id="result" />
+            <label for="result">رفع الملف</label>
+          </div>
+        </div>
+
+        <div class="policies">
+          <label for="secondeCheckbox" class="policiLabel"
+            >بالضغط على التسجيل أنا اوافق على شروط الخدمة وسياسة الخصوصية
+          </label>
+          <input type="checkbox" name="checkbox" id="secondeCheckbox" />
+        </div>
+
+        <input type="submit" value="تسجيل" id="submitBtn" class="input" />
+      </form>
+    </section>
+    <!-- --------------------------- End Content Section --------------------------- -->
+
+    <!-- -------------------- Start Footer -------------------- -->
+    <footer>
+      <p>Made by Ershad 2024</p>
+      <div class="icons">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-solid fa-phone"></i>
+        <i class="fa-regular fa-envelope"></i>
+      </div>
+    </footer>
+    <!-- -------------------- End Footer -------------------- -->
+  </body>
+</html>

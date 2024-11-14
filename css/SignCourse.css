@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+:root {
+  --main-color-: rgb(0, 128, 128);
+  --secondary-color-: rgba(0, 71, 71, 1);
+  --lable-font-color-: #4d4d4d;
+}
+body {
+  font-family: "Rubik", sans-serif;
+}
+.container {
+  position: relative;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+}
+.container form {
+  width: 600px;
+  height: 100%;
+  padding: 70px 40px;
+  text-align: end;
+}
+.container form .title {
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+  color: var(--lable-font-color-);
+  margin-bottom: 40px;
+}
+.container form label {
+  font-size: 20px;
+  color: var(--lable-font-color-);
+}
+.container form .input {
+  position: relative;
+  width: 100%;
+  padding: 15px;
+  margin: 15px 0 20px;
+  color: var(--lable-font-color-);
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: end;
+  border: 1px solid var(--main-color-);
+  border-radius: 8px;
+  outline: none;
+  transition: 0.6s;
+}
+.container form .input::placeholder {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+}
+.container form .input:focus {
+  outline: 1px solid var(--main-color-);
+}
+
+.container form .selectColumn {
+  display: flex;
+  column-gap: 20px;
+}
+.selectColumn .selectBox {
+  width: 50%;
+}
+.selectColumn .selectBox label {
+  display: block;
+}
+.selectColumn .selectBox select {
+  width: 100%;
+  margin: 15px 0 20px;
+  padding: 10px 20px;
+  text-align: end;
+  cursor: pointer;
+  font-family: "Rubik", sans-serif;
+  outline: none;
+  border: 1px solid var(--main-color-);
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+}
+select i {
+  font-size: 20px;
+  color: var(--lable-font-color-);
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+form select {
+  cursor: pointer;
+  appearance: none;
+  position: relative;
+}
+select option {
+  font-size: 16px;
+  padding: 40px;
+}
+
+.resultBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  margin: 20px 0 40px;
+}
+.resultBox p {
+  font-size: 18px;
+}
+.resultBox p a {
+  margin-right: 5px;
+  color: var(--main-color-);
+}
+.resultBox #result {
+  display: none;
+}
+.resultBox .fileBtn label {
+  font-size: 15px;
+  color: #fff;
+  border-radius: 6px;
+  outline: none;
+  background-color: var(--main-color-);
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.policies {
+  display: block;
+  width: 100%;
+  position: relative;
+  margin: 50px 0 0;
+}
+.policies input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  outline: 1px solid var(--lable-font-color-);
+  appearance: none;
+  position: relative;
+}
+.policies input[type="checkbox"]::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 6px;
+  width: 5px;
+  height: 13px;
+  border: 3px solid transparent;
+  border-left: none;
+  border-top: none;
+  transform: rotate(45deg) scale(1);
+}
+.policies input[type="checkbox"]:checked:before {
+  border-color: #fff;
+}
+.policies input[type="checkbox"]:checked {
+  background-color: var(--main-color-);
+  outline: none;
+}
+.policies .policiLabel {
+  font-size: 14px;
+  position: absolute;
+  right: 30px;
+  top: 3px;
+}
+
+.container form #submitBtn {
+  background-color: var(--main-color-);
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.container form #submitBtn:hover,.resultBox .fileBtn label:hover {
+  background-color: #016b6b;
+}
