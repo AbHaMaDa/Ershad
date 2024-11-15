@@ -1,6 +1,6 @@
 .footer {
   padding-top: 30px;
-  background-color: #1D4747;
+  background-color: #1d4747;
   color: white;
 }
 .footer-middle {
@@ -56,7 +56,7 @@
 .footer .social-links li a {
   border: 1px solid white;
   border-radius: 50%;
-  background-color: #1D4747;
+  background-color: #1d4747;
   text-align: center;
 }
 .footer .social-links :hover .footer__social-link svg {
@@ -85,4 +85,4 @@
 .footer .footer-bottom .footer-settings .form-select {
   margin-left: 10px;
   border: 1px solid #ddd;
-}/*# sourceMappingURL=footer.css.map */
+} /*# sourceMappingURL=footer.css.map */
