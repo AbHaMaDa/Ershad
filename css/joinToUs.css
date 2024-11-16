@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color-: #008080;
+  --secondary-color-: #004747;
+  --font-color-: #777777;
+  --lable-font-color-: #4d4d4d;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+.container {
+  position: relative;
+}
+/* ---------------- => Start Title Box Style ---------------- */
+
+.container .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 400px;
+  width: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.5)),
+    url(../Images/whatsTheNew.png) no-repeat;
+  background-size: cover;
+}
+
+.title span {
+  color: #fff;
+  font-size: 55px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.title button {
+  width: 140px;
+  font-size: 19px;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  padding: 15px 20px;
+  margin-top: 30px;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  background-color: var(--main-color-);
+  transition: 0.6s;
+}
+
+.title button:hover {
+  background-color: #016b6b;
+}
+
+.content-box {
+  display: flex;
+  justify-content: center;
+  padding: 60px 60px 0;
+}
+
+.content-box .leftSide {
+  text-align: end;
+  margin-right: 100px;
+}
+
+.leftSide .features {
+  margin-top: 50px;
+  display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
+  column-gap: 80px;
+  row-gap: 50px;
+}
+
+.features .advantages {
+  width: 230px;
+  height: 200px;
+}
+
+.advantages i {
+  color: #ffaa47;
+  font-size: 50px;
+}
+
+.advantages span {
+  display: block;
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+.advantages p {
+  line-height: 1.5;
+  color: var(--font-color-);
+}
+
+.content-box .leftSide .subHeading {
+  color: var(--main-color-);
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.imageSide {
+  position: relative;
+  margin-top: 50px;
+}
+
+.imageSide img {
+  width: 520px;
+  z-index: 10;
+}
+
+.imageSide .greenBorder {
+  width: 200px;
+  height: 200px;
+  border: 20px solid var(--main-color-);
+  border-radius: 50%;
+  position: absolute;
+  top: 30px;
+  left: 60px;
+  z-index: -2;
+}
+
+.imageSide .orangeCircle {
+  position: absolute;
+  left: 70px;
+  top: 50px;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background-color: #ffaa47;
+  z-index: -1;
+}
+
+/* <!-- -------------------- => Start Requirements Box Style -------------------- --> */
+
+.requirements-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 500px;
+  padding: 50px 50px;
+  background-color: #e6e6e6;
+}
+
+.requirements-box img {
+  width: 430px;
+  margin-left: 150px;
+}
+
+.requirements-box .requirements {
+  text-align: end;
+  margin-right: 40px;
+  align-self: flex-starts;
+}
+
+.requirements span {
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--main-color-);
+}
+
+.requirements h4 {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 30px 0 30px 250px;
+}
+
+.requirements p {
+  font-size: 25px;
+  margin-bottom: 25px;
+  color: var(--font-color-);
+}
+
+p i {
+  font-size: 12px;
+  color: #fff;
+  background-color: #ffaa47;
+  padding: 5px;
+  border-radius: 25px;
+  margin-left: 10px;
+}
+/* <!-- -------------------- => End Requirements Box Style -------------------- --> */
+
+/* <!-- -------------------- => Start Experts Box Style -------------------- --> */
+
+.our-experst {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 50px;
+  padding: 40px 0;
+  background-color: #455f5f;
+}
+
+.our-experst span {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.our-experst .conterBox {
+  width: 80%;
+  height: 450px;
+}
+
+.slider-wrapper {
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 40px 90px 55px;
+}
+
+.card-list .card-item img {
+  width: 320px;
+  height: 370px;
+  border-radius: 8px;
+  transition: 0.5s;
+}
+
+.briefBox {
+  position: relative;
+}
+
+.details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  bottom: -50px;
+  right: 0;
+  width: 230px;
+  height: 135px;
+  border-radius: 8px;
+  padding: 10px;
+  row-gap: 10px;
+  background-color: #fff;
+  box-shadow: 4px 4px 11px 0px #0000001a;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s ease-in, 0.2s ease-out;
+}
+
+.briefBox:hover img {
+  width: 280px;
+  height: 310px;
+}
+
+.briefBox:hover .details {
+  visibility: visible;
+  opacity: 1;
+}
+
+.details h4 {
+  color: var(--main-color-);
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.details p {
+  color: var(--font-color-);
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.details .breakLine {
+  width: 65%;
+  height: 2px;
+  background-color: var(--font-color-);
+}
+
+.details .socialLinks a {
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.socialLinks a i {
+  font-size: 18px;
+  color: #ffaa47;
+  transition: 0.5s;
+}
+
+.socialLinks a i:hover {
+  color: #ff8800;
+}
+
+.slider-wrapper .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+}
+
+.slider-wrapper .swiper-pagination {
+  padding-top: 30px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  color: #ffffff5d;
+  background: #77777778;
+  transition: 0.5s;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: #fff;
+  background: #7777779e;
+}
+
+.our-experst button {
+  width: 220px;
+  padding: 15px 25px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: #fff;
+  background-color: #ffaa47;
+  transition: 0.6s;
+}
+
+.our-experst button:hover {
+  background-color: #ff9c2b;
+}
+
+/* <!-- -------------------- => End Experts Box Style -------------------- --> */
+footer {
+  margin-top: 0;
+}

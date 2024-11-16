@@ -1,9 +1,9 @@
 header {
-  width: 100%;
-  padding: 20px 80px 15px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
+  padding: 20px 80px 15px;
   box-shadow: 5px 4px 8px #00000030;
 }
 header .logo {
@@ -59,8 +59,8 @@ header .searchBox i {
 header .btns button {
   width: 120px;
   font-size: 18px;
-  font-weight: 400;
-  padding: 10px 20px;
+  font-family: "Rubik", sans-serif;
+  padding: 12px 20px;
   outline: none;
   border: 1px solid #ccdcdc;
   border-radius: 25px;
