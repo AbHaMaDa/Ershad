@@ -1,0 +1,835 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color-: #008080;
+  --secondary-color-: #004747;
+  --font-color-: #777777;
+  --lable-font-color-: #4d4d4d;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+.container {
+  position: relative;
+}
+
+/* -------------=> Start Header Style --------------------------- */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 80px 10px;
+  box-shadow: 5px 4px 8px #00000030;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .logo span {
+  font-size: 30px;
+  color: var(--main-color-);
+}
+
+header .logo img {
+  width: 75px;
+  padding-left: 7px;
+}
+
+header ul {
+  position: relative;
+}
+
+header ul li {
+  list-style: none;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s ease-in, 0.2s ease-out;
+}
+
+header ul li a {
+  display: block;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  text-align: end;
+  padding: 20px 25px;
+  text-decoration: none;
+  color: #000;
+}
+
+ul li ul.dropdown li {
+  display: block;
+  transition: 0.5s ease-in, 0.3 ease-out;
+}
+
+ul li ul.dropdown {
+  display: none;
+  width: 260px;
+  position: absolute;
+  top: 60px;
+  left: -50px;
+  z-index: 999;
+  background-color: #fff;
+  box-shadow: 3px 3px 26px 0px #0000001a;
+}
+
+#whoMenu {
+  width: 150px;
+  left: -5px;
+}
+
+#menu-Link a i {
+  padding-right: 8px;
+}
+
+ul li ul.dropdown li:hover {
+  background-color: #ececec81;
+  border-right: 5px solid var(--main-color-);
+}
+
+ul li ul.dropdown li a {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+ul li:hover ul.dropdown {
+  display: block;
+}
+
+ul li ul.dropdown li a {
+  padding: 12px 20px;
+}
+
+header ul li .main {
+  color: var(--main-color-);
+}
+
+header .headBtns {
+  display: flex;
+  align-items: center;
+}
+
+.headBtns button{
+  cursor: pointer;
+}
+
+header .headBtns #logIn,
+header .headBtns #signUp {
+  width: 120px;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  padding: 12px 20px;
+  outline: none;
+  border: 1px solid #ccdcdc;
+  border-radius: 25px;
+  background-color: transparent;
+  transition: 0.6s;
+}
+
+header .headBtns #logIn {
+  color: var(--main-color-);
+  border: 1px solid var(--main-color-);
+  margin: 0 20px;
+}
+
+header .headBtns #logIn:hover {
+  background-color: var(--main-color-);
+  color: #fff;
+}
+
+header .headBtns #signUp {
+  color: #fff;
+  background-color: var(--main-color-);
+}
+
+header .headBtns #signUp:hover {
+  background-color: #016b6b;
+}
+
+.userBtn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  outline: none;
+  border: 1px solid var(--main-color-);
+  background-color: transparent;
+}
+
+.headBtns i {
+  font-size: 30px;
+  color: var(--main-color-);
+}
+
+/* -------------=> End Header Style --------------------------- */
+
+/* ---------------- => Start home Box Style ---------------- */
+
+.container .home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 660px;
+  width: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.5)),
+    url(../Images/homebg.png) center no-repeat;
+  background-size: cover;
+}
+
+.home span {
+  color: #fff;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.home p {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 40px 250px 35px;
+  text-align: center;
+}
+
+.btns button {
+  width: 170px;
+  font-size: 18px;
+  font-family: "Rubik", sans-serif;
+  padding: 15px 40px;
+  margin: 20px;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 25px;
+  transition: 0.6s;
+}
+
+.btns .exploreBtn {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #ccdcdc;
+  margin-right: 15px;
+}
+
+.btns .signBtn {
+  background-color: var(--main-color-);
+  border: 2px solid var(--main-color-);
+}
+
+.btns .exploreBtn:hover,
+.btns .signBtn:hover {
+  border: 2px solid #016b6b;
+  background-color: #016b6b;
+}
+
+/* -------------=> Start features Box Style ------------------------=> */
+
+.features {
+  width: 100%;
+  height: 100vh;
+  padding: 50px;
+  background: #f2f2f2;
+}
+
+.features .subHead {
+  width: 100%;
+  text-align: end;
+}
+
+.subHead span {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--main-color-);
+}
+
+.subHead .paragraph {
+  margin: 25px 0 80px;
+}
+
+.paragraph p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: var(--font-color-);
+}
+
+.features .boxContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.boxContainer .box {
+  width: 300px;
+  height: 300px;
+  padding: 40px 30px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 3px 3px 26px 0px #0000001a;
+}
+
+.box i {
+  display: block;
+  font-size: 55px;
+  margin-bottom: 25px;
+}
+
+#orangeIcon {
+  color: orange;
+}
+
+.box span {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.box p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  margin-top: 22px;
+}
+/* -------------=> End features Box Style ------------------------=> */
+
+.howContainer {
+  width: 100%;
+  padding: 50px;
+  text-align: center;
+}
+
+.howContainer span {
+  color: var(--main-color-);
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.howContainer .propierties {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin-top: 80px;
+  column-gap: 180px;
+  padding-right: 60px;
+}
+
+.propierties .info {
+  width: 270px;
+  height: 200px;
+  text-align: end;
+  position: relative;
+}
+
+.info .briefBox span {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.briefBox p {
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 20px;
+  line-height: 1.6;
+  color: var(--font-color-);
+}
+
+.info .icon {
+  position: absolute;
+  top: -10px;
+  right: -90px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+}
+
+.icon i {
+  font-size: 35px;
+  padding-top: 17px;
+}
+
+#firstI {
+  background: #36454f;
+}
+
+#secondeI {
+  background: #ffcc00;
+}
+
+#thirdI {
+  background: #e76f51;
+}
+
+/* -----------------=> Start Style OF Start Up Page  ------------------------ */
+
+.startupBox {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 70px 0 130px;
+  height: 550px;
+  background: #ebf7f7;
+}
+
+.startupBox .rightside {
+  width: 40%;
+  height: 500px;
+  padding-top: 50px;
+  text-align: end;
+}
+
+.rightside span {
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.switchBtns button {
+  font-size: 22px;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding-bottom: 5px;
+  margin: 27px 0 25px 0;
+  background-color: transparent;
+}
+
+.switchBtns #readyBtn {
+  padding: 0 25px 10px;
+}
+
+.switchBtns #readyBtn2 {
+  margin-left: 25px;
+}
+
+.switchBtns .active {
+  color: var(--main-color-);
+  border-bottom: 3px solid var(--main-color-);
+}
+
+.startupBox .rightside .btns .exploreBtn {
+  color: #004747;
+  margin-right: 0;
+}
+
+.startupBox .rightside .btns .exploreBtn:hover {
+  color: #fff;
+}
+
+.rightside p {
+  font-size: 22px;
+  color: var(--font-color-);
+  line-height: 1.7;
+}
+
+.imageSide {
+  position: relative;
+  width: 650px;
+}
+
+.dottedImg {
+  width: 600px;
+  z-index: -1;
+}
+
+.imageSide div {
+  border-radius: 8px;
+  box-shadow: 2px 4px 10px 1px #0000002e;
+}
+
+.imageSide .teacherImg {
+  width: 330px;
+  height: 310px;
+  position: absolute;
+  top: -60px;
+  left: 0;
+  background: url(../Images/homeImg1.png) no-repeat center;
+}
+
+.readersImg {
+  width: 285px;
+  height: 250px;
+  position: absolute;
+  top: 100px;
+  right: 10px;
+  background: url(../Images/homeImg2.png) no-repeat left;
+}
+
+.boyImg {
+  width: 280px;
+  height: 250px;
+  position: absolute;
+  left: 50px;
+  bottom: 30px;
+  background: url(../Images/homeImg3.png) no-repeat center;
+}
+
+/* -----------------=> End Style OF Start Up Page  ------------------------ */
+
+.discoverUs {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.discoverUs .topSlide {
+  width: 100%;
+  height: 525px;
+  color: #fff;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 42, 42, 0.75),
+      rgba(0, 42, 42, 0.75)
+    ),
+    url(../Images/homeBg2.png) center no-repeat;
+  background-size: cover;
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.topSlide .title {
+  width: 65%;
+  height: 400px;
+  text-align: center;
+}
+
+.title span {
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.title p {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.7;
+  margin-top: 25px;
+}
+
+.bottomSlide {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  bottom: 80px;
+  width: 100%;
+  padding: 0 70px;
+}
+
+.bottomSlide .path {
+  position: relative;
+  width: 315px;
+  height: 380px;
+  background-color: #fff;
+  box-shadow: 0px 4px 13px 0px #00000029;
+  border-radius: 8px;
+  padding: 7px;
+}
+
+.path img {
+  width: 100%;
+  height: 230px;
+  border-radius: 4px;
+  margin-bottom: 25px;
+}
+
+.path span {
+  padding: 10px;
+  border-radius: 25px;
+  color: #fff;
+  box-shadow: 0px 4px 4px 0px #0000001f;
+  font-size: 14px;
+  font-weight: 400;
+  position: absolute;
+  bottom: 125px;
+  left: 20px;
+}
+
+.web {
+  background: #ff7f50;
+}
+
+.mobile {
+  background: #ffaa47;
+}
+
+.data {
+  background: #942a00;
+}
+
+.path p {
+  color: var(--font-color-);
+  text-align: end;
+  padding: 0 20px;
+  line-height: 1.6;
+}
+
+.path button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Rubik", sans-serif;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  padding: 20px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--main-color-);
+}
+
+.path i {
+  padding-left: 15px;
+  transition: 0.5s;
+}
+
+.path button:hover i {
+  padding-left: 7px;
+}
+
+/* --------------------- => Start English Test ---------------------------- */
+
+/* Note: This Box Same stylies with ( The Start Up Box ) In The top ------ */
+
+.testBox {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 70px 0 130px;
+}
+
+.rightside {
+  width: 40%;
+  height: 500px;
+  padding-top: 50px;
+  text-align: end;
+}
+
+.testBox .imageSide img {
+  width: 450px;
+}
+
+.testBox .rightside span {
+  color: var(--main-color-);
+}
+
+.testBox .rightside .active {
+  border: none;
+}
+
+.testBox .rightside .signBtn {
+  margin-top: 35px;
+}
+
+.testBox .switchBtsn button {
+  font-weight: normal;
+}
+
+/* --------------------- => End English Test ---------------------------- */
+
+/* ---------------- => Start Email Box Style ---------------- */
+
+.emailBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 300px;
+  padding: 50px;
+  background: #dbefef;
+}
+
+.emailBox span {
+  color: var(--main-color-);
+  font-size: 40px;
+}
+
+.emailBox p {
+  color: var(--font-color-);
+  font-size: 22px;
+  margin: 15px 0 40px;
+}
+
+.input {
+  position: relative;
+}
+
+.input input {
+  width: 460px;
+  text-align: end;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--lable-font-color-);
+  padding: 15px 25px;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+}
+
+.input input::placeholder {
+  font-size: 14px;
+  color: #9b9898;
+  font-family: "Rubik", sans-serif;
+}
+
+.input .sendIcon i {
+  position: absolute;
+  left: 30px;
+  top: 15px;
+  font-size: 20px;
+  color: #ffaa47;
+  cursor: pointer;
+}
+
+/* ---------------- => End Email Box Style ---------------- */
+
+/* ---------------- Start => Sponser Box Style ---------------- */
+
+.sponser {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  column-gap: 100px;
+  padding: 30px 70px 70px;
+}
+
+.sponser img {
+  width: 200px;
+}
+
+/* ---------------- End => Sponser Box Style ---------------- */
+
+/* ---------------- End => Footer Style ---------------- */
+
+footer {
+  width: 100%;
+  height: 370px;
+  padding: 50px 70px 20px;
+  background-color: var(--secondary-color-);
+}
+
+.footerContent {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerContent .summaryBox {
+  width: 220px;
+  height: 220px;
+  text-align: end;
+}
+
+#pathsBox {
+  margin-left: 120px;
+}
+
+.summaryBox span {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.summaryBox a {
+  display: block;
+  font-size: 14px;
+  margin: 15px 0;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.9s;
+  opacity: 0.7;
+}
+
+.summaryBox a:hover {
+  opacity: 1;
+}
+
+.footerContent #footerLogo {
+  text-align: center;
+  margin-left: 200px;
+}
+
+.footerContent #footerLogo span {
+  display: block;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 500;
+  margin: 10px 0 27px;
+}
+
+.footerContent #footerLogo .footBtns div {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0 5px;
+  padding-top: 11px;
+  opacity: 0.6;
+  transition: 0.5s;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+#footerLogo .footBtns div:hover {
+  opacity: 1;
+}
+
+#footerLogo .footBtns div i {
+  color: #fff;
+  font-size: 27px;
+}
+
+.finish {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.finish span {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.finish .upIcon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  text-align: center;
+  padding-top: 12px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.finish .upIcon:hover {
+  opacity: 1;
+}
+
+.finish .upIcon i {
+  font-size: 35px;
+  color: #fff;
+}
+
+/* ---------------- End => Footer Style ---------------- */
